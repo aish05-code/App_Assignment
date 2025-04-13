@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# E-Commerce Mobile App  
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple e-commerce product listing mobile application built with **React Native** and **Expo**, integrating the **FakeStore API** for product data. The app supports product listing, detailed views, cart management, wishlist functionality, and search/filter features.  
 
-## Get started
+## Features  
 
-1. Install dependencies
+- **Product Listing**: Displays a grid of products with images, titles, and prices.  
+- **Product Details**: Includes product description, price, quantity selector, and options to add to cart or wishlist.  
+- **Cart Management**: Stores selected products in the cart using AsyncStorage and calculates the total price dynamically.  
+- **Wishlist Feature**: Allows users to add or remove items from the wishlist.  
+- **Search & Filtering**: Provides real-time search and category-based filtering.  
+- **Navigation**: Implemented using React Navigation for seamless transitions between screens.  
 
-   ```bash
-   npm install
-   ```
+## Tech Stack  
 
-2. Start the app
+- **React Native** (Expo CLI)  
+- **React Navigation**  
+- **Context API** for state management  
+- **AsyncStorage** for persistent cart data  
+- **FakeStore API** for dynamic product data  
 
-   ```bash
-    npx expo start
-   ```
+[Download Demo Video](./demo.mp4)
 
-In the output, you'll find options to open the app in a
+## Installation & Setup  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. **Clone the repository**  
+   ```sh  
+   git clone https://github.com/aish05-code/Simplify_E-com.git  
+   cd Simplify_E-com 
+   ```  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+2. **Install dependencies**  
+   ```sh  
+   npm install  
+   ```  
 
-## Get a fresh project
+3. **Start the application**  
+   ```sh  
+   npx expo start  
+   ```  
 
-When you're ready, run:
+4. **Run on emulator or device**  
+   - Scan the QR code with the Expo Go app (Android/iOS)  
+   - Or launch in an emulator using `a` (Android) or `i` (iOS) in the terminal  
 
-```bash
-npm run reset-project
-```
+## Deployment  
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+To build the app for production:  
+```sh  
+eas build  
+```  
 
-## Learn more
+## Future Enhancements  
 
-To learn more about developing your project with Expo, look at the following resources:
+- Implement persistent wishlist storage.  
+- Improve UI/UX with animations and enhanced styling.  
+- Add user authentication for personalized shopping experience.  
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
